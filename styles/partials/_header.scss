@@ -1,0 +1,39 @@
+header#main-header {
+  width: 100%;
+  background: var(--color-neutral);
+  display: flex;
+  padding: 6px 0;
+  place-items: center;
+
+  img#logo {
+    margin-left: calc(4.8vw - 8px);
+    width: 240px;
+
+    @include media("width<700px") {
+      width: 190px;
+    }
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  nav {
+    margin-right: calc(3vw + 2px - 0.8em);
+
+    > ul {
+      list-style-type: none;
+      display: flex;
+      place-items: center;
+
+      li {
+        margin: 0 calc(0.8em + 1.7vw);
+      }
+
+      a:not(.button) {
+        text-decoration: none;
+        color: var(--color-text-body);
+      }
+    }
+  }
+}

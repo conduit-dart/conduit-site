@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+$font-family-header: "Nunito Sans";
+$font-weight-header: 700;
+
+$font-family-body: "Nunito Sans";
+$font-weight-body: 400;
+$font-size-h1: 2em;
+
+@mixin font-body($weight: $font-weight-body) {
+  font-family: $font-family-body;
+  font-weight: $weight;
+}

@@ -1,0 +1,77 @@
+---
+title: "Conduit: A modern Dart server framework"
+template: index.html
+jinja: true
+---
+
+<div class="side">
+
+    <h1>The modern, multi-threaded Dart server framework that helps you focus on building.</h1>
+
+    <div class="mini-hr"></div>
+
+    <p class="caption">
+    Conduit is a powerful open-source web framework with everything
+    you need to create production-ready applications.<br><br><br>
+    </p>
+
+    <div class="row">
+        <div class="button neutral round mr-4">Learn More</div>
+        <div class="button primary round ml-4">Get Started</div>
+    </div>
+
+    <br>
+
+    <p>
+        <strong><em>(Migrating from Aqueduct? <a href="{{data.links.migrate}}">Click here</a>)</em></strong>
+    </p>
+
+    <br>
+    <br>
+
+</div>
+
+<h2>One framework, all the tools you need.</h2>
+<br>
+
+<div class="code-grid">
+<div>
+    <h3>Fluid <span class="text-primary">routing</span></h3>
+    <p class="caption">
+        A familiar, higher-order functional syntax makes application flow
+        easy to construct and read.
+    </p>
+</div>
+
+<pre>
+<code class="language-dart">router
+  .route('/teams/[:id]')
+  .link(() =&gt; Authorizer(validator))
+  .link(() =&gt; TeamController(databaseContext));</code>
+</pre>
+
+</div>
+
+<br>
+
+<div class="code-grid">
+<div>
+    <h3>Statically-typed <span class="text-primary">ORM</span> with database migrations</h3>
+    <p class="caption">
+        Powerful, statically typed queries enable code-completion and
+        refactoring tools while minimizing error. Tested command-line
+        tooling for database migrations makes data management a
+        breeze.
+    </p>
+</div>
+
+<pre>
+<code class="language-dart">final query = Query&lt;Team&gt;(context)
+  ..where((t) =&gt; t.skills).contains('conduit')
+  ..join(object: (t) =&gt; t.manager)
+  ..join(set: (t) =&gt; t.developers);
+
+final teams = await query.fetch();</code>
+</pre>
+
+</div>

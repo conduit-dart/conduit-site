@@ -1,0 +1,18 @@
+title: Conduit
+author: Conduit Team
+baseUrl: https://theconduit.dev
+build:
+  verbose: false
+  public_dir: public
+  content_dir: content
+  templates_dir: templates
+  static_dir: static
+  styles_dir: styles
+  data_dir: data
+  types_dir: types
+  generate_search_index: false
+serve:
+  port: 4040
+  websocket_port: 4041
+  verbose: false
+extra: {}

@@ -1,0 +1,26 @@
+@import "include/normalize";
+@include normalize();
+
+@import "include/include_media";
+
+@import "include/prism-nord";
+
+@import "variables";
+@import "typography";
+@import "layout";
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/button";
+@import "partials/mini_hr";
+@import "partials/code_grid";
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  @include font-body();
+}
+
+#content {
+  margin: calc(34px + 2vw) calc(4.8vw + 10px);
+}

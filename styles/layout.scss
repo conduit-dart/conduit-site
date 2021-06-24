@@ -1,0 +1,39 @@
+.row {
+  display: flex;
+}
+
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    margin-right: $i * 3px;
+  }
+
+  .ml-#{$i} {
+    margin-left: $i * 3px;
+  }
+
+  .mx-#{$i} {
+    margin-left: $i * 3px;
+    margin-right: $i * 3px;
+  }
+
+  .mt-#{$i} {
+    margin-top: $i * 3px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i * 3px;
+  }
+
+  .my-#{$i} {
+    margin-top: $i * 3px;
+    margin-bottom: $i * 3px;
+  }
+}
+
+.side {
+  width: 55%;
+
+  @include media("width<900px") {
+    width: 100%;
+  }
+}

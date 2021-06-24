@@ -1,0 +1,32 @@
+footer#main-footer {
+  width: 100%;
+  background: var(--color-neutral);
+  display: flex;
+  padding: 6px 0;
+  place-items: center;
+
+  height: 120px;
+
+  a#chevron-link {
+    width: calc(104px + 4.3vw);
+  }
+
+  img#logo-chevron {
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    left: 0;
+    margin-top: -240px;
+    margin-left: calc(-195px + 4.3vw);
+    object-fit: none;
+    filter: contrast(0.6) brightness(1.4);
+    object-position: 2% 98%;
+    transform: scale(0.15);
+  }
+
+  p {
+    @include font-body();
+    color: var(--color-text-body);
+    max-width: 40%;
+  }
+}

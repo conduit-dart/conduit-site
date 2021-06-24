@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {% endblock %}
+</head>
+<body>
+{% include 'partials/header.html' %}
+<main id="content">{% block content %}{{content}}{% endblock %}</main>
+{% include 'partials/footer.html' %}
+<script src="/js/prism.js"></script>
+</body>
+</html>

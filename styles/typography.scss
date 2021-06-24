@@ -1,0 +1,30 @@
+@import "theme/typography";
+
+h1, h2 {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+a:not(.button) {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
+}
+
+p {
+  line-height: 1.6;
+}
+
+.caption {
+  color: var(--color-text-body);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}

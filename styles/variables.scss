@@ -1,0 +1,28 @@
+@import "theme/colors";
+
+/**
+ * Define colors as variables here, in case we ever want to make
+ * a dynamic dark theme
+ */
+* {
+  --color-neutral: #{$color-neutral};
+  --color-background: #{$color-background};
+  --color-primary: #{$color-primary};
+  --color-accent: #{$color-accent};
+  --color-secondary: #{$color-secondary};
+
+  --color-neutral-hover: #{$color-neutral-hover};
+  --color-primary-hover: #{$color-primary-hover};
+  --color-accent-hover: #{$color-accent-hover};
+
+  --color-text-header: #{$color-text-header};
+  --color-text-caption: #{$color-text-caption};
+  --color-text-body: #{$color-text-body};
+  --color-text-highlight: #{$color-text-highlight};
+  --color-link: #{$color-link};
+  --color-link-visited: #{$color-link-visited};
+  --color-link-accent: #{$color-link-accent};
+  --color-text-button-neutral: #{$color-text-button-neutral};
+  --color-text-button-primary: #{$color-text-button-primary};
+  --color-text-button-accent: #{$color-text-button-accent};
+}

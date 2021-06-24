@@ -1,0 +1,41 @@
+a.button {
+  text-decoration: none;
+}
+
+.button {
+  @include font-body(700);
+
+  padding: 5px 13px;
+  cursor: pointer;
+  display: inline-block;
+
+  &.neutral {
+    transition: background-color 0.12s, color 0.12s, border 0.12s;
+    background-color: var(--color-neutral);
+    color: var(--color-text-button-neutral);
+    border: 3px solid var(--color-neutral);
+
+    &:hover {
+      background-color: var(--color-neutral-hover);
+      border: 3px solid var(--color-primary);
+    }
+  }
+
+  &.primary {
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    background-color: var(--color-primary);
+    color: var(--color-text-button-primary);
+    border: 3px solid var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-neutral);
+      border: 3px solid var(--color-primary);
+      color: var(--color-primary);
+    }
+  }
+
+  &.round {
+    border-radius: 4px;
+  }
+}
+

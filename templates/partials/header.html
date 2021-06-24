@@ -1,0 +1,21 @@
+{% block pageheader %}
+<header id="main-header">
+    <a href="/">
+        <img id="logo" alt="Conduit logo" src="/images/conduit-name-bg.png">
+    </a>
+
+    <div class="spacer"></div>
+
+    <nav>
+        <ul>
+            <li><a href="{{data.links.docs}}">Docs</a></li>
+            <!--li><a href="{{data.links.forum}}">Forum</a></li-->
+            <li><a href="{{data.links.discord}}">Discord</a></li>
+            <li><a href="{{data.links.github}}">GitHub</a></li>
+            <li>
+                <a href="/get-started" class="button primary round mr-1">Get Started</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+{% endblock %}

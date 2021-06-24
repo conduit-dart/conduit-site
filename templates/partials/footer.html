@@ -1,0 +1,25 @@
+{% block footer %}
+<footer id="main-footer">
+
+    <a id="chevron-link" href="/">
+        <img id="logo-chevron" alt="Conduit logo chevron" src="/images/conduit-palette2.png">
+    </a>
+
+
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear().toString())</script> {{data.texts.copyright}}</p>
+
+    <div class="spacer"></div>
+
+    <!--nav>
+        <ul>
+            <li><a href="{{data.links.docs}}">Docs</a></li>
+            <li><a href="{{data.links.forum}}">Forum</a></li>
+            <li><a href="{{data.links.discord}}">Discord</a></li>
+            <li><a href="{{data.links.github}}">GitHub</a></li>
+            <li>
+                <a href="/get-started" class="button primary round mr-1">Get Started</a>
+            </li>
+        </ul>
+    </nav-->
+</footer>
+{% endblock %}
