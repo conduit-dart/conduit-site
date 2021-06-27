@@ -1,8 +1,9 @@
 @import "theme/typography";
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $font-family-header;
   font-weight: $font-weight-header;
+  color: var(--color-text-header);
 }
 
 h1 {

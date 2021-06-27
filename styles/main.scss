@@ -19,6 +19,7 @@ body {
   margin: 0;
   background-color: var(--color-background);
   @include font-body();
+  color: var(--color-text-body);
 }
 
 #content {

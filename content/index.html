@@ -15,40 +15,40 @@ jinja: true
     you need to create production-ready applications.<br><br><br>
     </p>
 
-    <div class="row">
-        <div class="button neutral round mr-4">Learn More</div>
-        <div class="button primary round ml-4">Get Started</div>
-    </div>
+<div class="row">
+    {{< button link="#" type="neutral round mr-4" >}}Learn More{{< /button >}}
+    {{< button link="/get-started" type="primary round ml-4" >}}Get Started{{< /button >}}
+</div>
 
-    <br>
+<br>
 
-    <p>
-        <strong><em>(Migrating from Aqueduct? <a href="{{data.links.migrate}}">Click here</a>)</em></strong>
-    </p>
-
-    <br>
-    <br>
+<p>
+    <strong><em>(Migrating from Aqueduct? <a href="{{data.links.migrate}}">Click here</a>)</em></strong>
+</p>
 
 </div>
+
+<br>
+<br>
 
 <h2>One framework, all the tools you need.</h2>
 <br>
 
 <div class="code-grid">
 <div>
-    <h3>Fluid <span class="text-primary">routing</span></h3>
+    <h3>Fluid <a href="https://gitbook.theconduit.dev/http/routing">routing</a></h3>
     <p class="caption">
         A familiar, higher-order functional syntax makes application flow
         easy to construct and read.
     </p>
 </div>
 
-<pre>
-<code class="language-dart">router
+{% code dart %}
+router
   .route('/teams/[:id]')
-  .link(() =&gt; Authorizer(validator))
-  .link(() =&gt; TeamController(databaseContext));</code>
-</pre>
+  .link(() => Authorizer(validator))
+  .link(() => TeamController(databaseContext));
+{% endcode %}
 
 </div>
 
@@ -56,7 +56,7 @@ jinja: true
 
 <div class="code-grid">
 <div>
-    <h3>Statically-typed <span class="text-primary">ORM</span> with database migrations</h3>
+    <h3>Statically-typed <a href="https://gitbook.theconduit.dev/http/routing">ORM</a> with database migrations</h3>
     <p class="caption">
         Powerful, statically typed queries enable code-completion and
         refactoring tools while minimizing error. Tested command-line
@@ -65,13 +65,13 @@ jinja: true
     </p>
 </div>
 
-<pre>
-<code class="language-dart">final query = Query&lt;Team&gt;(context)
-  ..where((t) =&gt; t.skills).contains('conduit')
-  ..join(object: (t) =&gt; t.manager)
-  ..join(set: (t) =&gt; t.developers);
+{% code dart %}
+final query = Query<Team>(context)
+  ..where((t) => t.skills).contains('conduit')
+  ..join(object: (t) => t.manager)
+  ..join(set: (t) => t.developers);
 
-final teams = await query.fetch();</code>
-</pre>
+final teams = await query.fetch();
+{% endcode %}
 
 </div>
