@@ -5,9 +5,10 @@ a.button {
 .button {
   @include font-body(700);
 
-  padding: 5px 13px;
+  padding: 6px 20px;
   cursor: pointer;
   display: inline-block;
+  min-width: max-content;
 
   &.neutral {
     transition: background-color 0.12s, color 0.12s, border 0.12s;
@@ -34,8 +35,21 @@ a.button {
     }
   }
 
+  &.accent {
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    background-color: var(--color-accent);
+    color: var(--color-text-button-accent);
+
+    padding: 8px 16px;
+
+    &:hover {
+      background-color: var(--color-neutral);
+      color: var(--color-primary);
+    }
+  }
+
   &.round {
-    border-radius: 4px;
+    border-radius: 3px;
   }
 }
 

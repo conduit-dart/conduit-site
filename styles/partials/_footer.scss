@@ -29,4 +29,28 @@ footer#main-footer {
     color: var(--color-text-body);
     max-width: 40%;
   }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  nav {
+    margin-right: calc(4.8vw + 10px);
+
+    > ul {
+      list-style-type: none;
+      display: flex;
+
+      place-items: center;
+
+      li {
+        margin: 0 calc(0.3em + 0.6vw);
+      }
+
+      a>img {
+        width: 30px;
+        opacity: 0.85;
+      }
+    }
+  }
 }

@@ -9,8 +9,11 @@
 </head>
 <body>
 {% include 'partials/header.html' %}
-<main id="content">{% block content %}{{content}}{% endblock %}</main>
+{% block before %}{% endblock %}
+{% block content %}{% endblock %}
+{% block after %}{% endblock %}
 {% include 'partials/footer.html' %}
-<script src="/js/prism.js"></script>
+<script defer src="/js/main.js"></script>
+<script defer src="/js/prism.js"></script>
 </body>
 </html>

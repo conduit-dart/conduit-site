@@ -1,8 +1,14 @@
 @import "theme/typography";
 
-h1, h2, h3 {
+h1, h2 {
   font-family: $font-family-header;
   font-weight: $font-weight-header;
+  color: var(--color-text-header);
+}
+
+h3, h4, h5 {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header-sm;
   color: var(--color-text-header);
 }
 
@@ -22,10 +28,17 @@ p {
   line-height: 1.6;
 }
 
+strong {
+  font-size: 0.95em;
+}
 .caption {
   color: var(--color-text-body);
 }
 
 .text-primary {
   color: var(--color-primary);
+}
+
+.text-center {
+  text-align: center;
 }

@@ -15,4 +15,6 @@ serve:
   port: 4040
   websocket_port: 4041
   verbose: false
+snippets:
+  - https://github.com/ethanblake4/anvil.git
 extra: {}

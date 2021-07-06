@@ -4,6 +4,7 @@
 @import "include/include_media";
 
 @import "include/prism-nord";
+@import "include/prism-vs";
 
 @import "variables";
 @import "typography";
@@ -14,6 +15,9 @@
 @import "partials/button";
 @import "partials/mini_hr";
 @import "partials/code_grid";
+@import "partials/image_grid";
+@import "partials/quickstart";
+@import "partials/code_tabs";
 
 body {
   margin: 0;
@@ -22,6 +26,15 @@ body {
   color: var(--color-text-body);
 }
 
-#content {
+.content-wide {
   margin: calc(34px + 2vw) calc(4.8vw + 10px);
+}
+
+.content-narrow {
+  margin: calc(34px + 2vw) calc(9.8vw);
+}
+
+article {
+  max-width: 840px;
+  margin: auto;
 }

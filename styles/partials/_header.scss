@@ -10,7 +10,7 @@ header#main-header {
     width: 240px;
 
     @include media("width<700px") {
-      width: 190px;
+      width: 40vw;
     }
   }
 
@@ -26,13 +26,27 @@ header#main-header {
       display: flex;
       place-items: center;
 
+      @include media("width<700px") {
+        padding-left: 0.5em;
+      }
+
       li {
-        margin: 0 calc(0.8em + 1.7vw);
+        margin: 0 calc(0.4em + 1.9vw);
       }
 
       a:not(.button) {
         text-decoration: none;
         color: var(--color-text-body);
+      }
+
+      @include media("width<700px") {
+        .button {
+          display: none;
+        }
+
+        a:not(.button) {
+          font-size: calc(10px + 1vw);
+        }
       }
     }
   }

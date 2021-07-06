@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="content" class="content-wide">
+    <article>
+        <div class="text-center">
+            <h1>{{title}}</h1>
+            <p class="caption">{{subhead}}</p>
+        </div>
+        {{ content }}
+    </article>
+</main>
+{% endblock %}

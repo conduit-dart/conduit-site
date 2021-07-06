@@ -1,0 +1,16 @@
+.code-tabs {
+  display: flex;
+
+  a {
+    margin: 2px 10px;
+    padding: 3px 0;
+    font-family: $font-family-header;
+    font-size: 13px;
+    color: var(--color-text-header);
+    cursor: pointer;
+  }
+
+  a.active {
+    border-bottom: 3px solid var(--color-primary);
+  }
+}

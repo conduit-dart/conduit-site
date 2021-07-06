@@ -1,1 +1,13 @@
 {% extends "base.html" %}
+{% block content %}
+<main id="content" class="content-wide">
+    <div class="rside">
+        <img src="/images/webapps.svg" alt="" aria-hidden="true">
+    </div>
+    {{content}}
+</main>
+{% endblock %}
+
+{% block after %}
+{% include 'partials/quickstart.html' %}
+{% endblock %}
