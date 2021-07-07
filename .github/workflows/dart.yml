@@ -36,4 +36,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: theconduit.dev
+          cname: www.theconduit.dev
