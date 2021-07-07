@@ -1,0 +1,102 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="548" height="479" viewBox="0 0 548 479">
+  <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(114 297)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="404" height="15" stroke="none"/>
+    <rect x="0.5" y="0.5" width="403" height="14" fill="none"/>
+  </g>
+  <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(81)" fill="none" stroke="#4d4d4d" stroke-width="1">
+    <rect width="467" height="312" rx="6" stroke="none"/>
+    <rect x="0.5" y="0.5" width="466" height="311" rx="5.5" fill="none"/>
+  </g>
+  <line id="Line_1" data-name="Line 1" x2="466" transform="translate(81.5 30.5)" fill="none" stroke="#484848" stroke-width="1"/>
+  <line id="Line_2" data-name="Line 2" y1="13" x2="13.089" transform="translate(480.5 9.5)" fill="none" stroke="#4b4b4b" stroke-width="1"/>
+  <line id="Line_3" data-name="Line 3" x2="13.089" y2="13" transform="translate(480.5 9.5)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(451 9)" fill="#fff" stroke="#2e2e2e" stroke-width="1">
+    <circle cx="7" cy="7" r="7" stroke="none"/>
+    <circle cx="7" cy="7" r="6.5" fill="none"/>
+  </g>
+  <line id="Line_4" data-name="Line 4" x2="15" transform="translate(420.5 16.5)" fill="none" stroke="#2e2e2e" stroke-width="1"/>
+  <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(114 60)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="106" height="73" stroke="none"/>
+    <rect x="0.5" y="0.5" width="105" height="72" fill="none"/>
+  </g>
+  <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(253 72)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="212" height="31" stroke="none"/>
+    <rect x="0.5" y="0.5" width="211" height="30" fill="none"/>
+  </g>
+  <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(253 115)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="137" height="18" stroke="none"/>
+    <rect x="0.5" y="0.5" width="136" height="17" fill="none"/>
+  </g>
+  <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(114 167)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <path d="M5,0H399a5,5,0,0,1,5,5V27a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+    <path d="M5,.5H399A4.5,4.5,0,0,1,403.5,5V26a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,26V5A4.5,4.5,0,0,1,5,.5Z" fill="none"/>
+  </g>
+  <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(114 193)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="404" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="403" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(114 219)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="404" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="403" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(114 245)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="404" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="403" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(114 271)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="404" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="403" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(0 167)" fill="#fafafa" stroke="#4d4d4d" stroke-width="1">
+    <rect width="163" height="312" rx="6" stroke="none"/>
+    <rect x="0.5" y="0.5" width="162" height="311" rx="5.5" fill="none"/>
+  </g>
+  <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(12 193)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="51" height="52" stroke="none"/>
+    <rect x="0.5" y="0.5" width="50" height="51" fill="none"/>
+  </g>
+  <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(70 193)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="81" height="26" stroke="none"/>
+    <rect x="0.5" y="0.5" width="80" height="25" fill="none"/>
+  </g>
+  <g id="Rectangle_31" data-name="Rectangle 31" transform="translate(70 227)" fill="#ededed" stroke="#bfbfbf" stroke-width="1">
+    <rect width="81" height="18" stroke="none"/>
+    <rect x="0.5" y="0.5" width="80" height="17" fill="none"/>
+  </g>
+  <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(76 173)" fill="#fff" stroke="#707070" stroke-width="1">
+    <circle cx="5" cy="5" r="5" stroke="none"/>
+    <circle cx="5" cy="5" r="4.5" fill="none"/>
+  </g>
+  <g id="Rectangle_32" data-name="Rectangle 32" transform="translate(4 264)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <path d="M5,0H150a5,5,0,0,1,5,5V27a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+    <path d="M5,.5H150A4.5,4.5,0,0,1,154.5,5V26a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,26V5A4.5,4.5,0,0,1,5,.5Z" fill="none"/>
+  </g>
+  <g id="Rectangle_33" data-name="Rectangle 33" transform="translate(4 290)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_34" data-name="Rectangle 34" transform="translate(4 316)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(4 342)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(4 368)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_37" data-name="Rectangle 37" transform="translate(4 394)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(4 420)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+  <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(4 446)" fill="none" stroke="#bfbfbf" stroke-width="1">
+    <rect width="155" height="27" stroke="none"/>
+    <rect x="0.5" y="0.5" width="154" height="26" fill="none"/>
+  </g>
+</svg>

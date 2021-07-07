@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started with Conduit</title>
+    
+</head>
+<body>
+
+<header id="main-header">
+    <a href="/">
+        <img id="logo" alt="Conduit logo" src="/images/conduit-name-bg.png">
+    </a>
+
+    <div class="spacer"></div>
+
+    <nav>
+        <ul>
+            <li><a href="https://gitbook.theconduit.dev">Docs</a></li>
+            <!--li><a href="https://discord.gg/MHz5cqktHW">Forum</a></li-->
+            <li><a href="https://discord.gg/MHz5cqktHW">Discord</a></li>
+            <li><a href="https://github.com/conduit-dart/conduit">GitHub</a></li>
+            <li>
+                <a href="/start" class="button primary round mr-1">Get Started</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main id="content" class="content-wide">
+    <article>
+        <div class="text-center">
+            <h1>Get Started with Conduit</h1>
+            <p class="caption">It only takes a few minutes.</p>
+        </div>
+        <div class="text-center">
+<p><em><strong>(Migrating from Aqueduct? <a href="https://gitbook.theconduit.dev/migration_guide">Click here</a>)</strong></em></p></div><div class="block-list">
+<ol>
+<li>
+<p>Install the Dart programming environment locally. 
+If you’ve previously installed it through Flutter, 
+you’ll want to install it again separately for Conduit.
+<a href="https://dart.dev/get-dart">Full instructions on the Dart site</a></p><div class="code-tabs"></div><div class='platform-linux'><pre><span style="user-select: none;">$ </span><code class="language-bash">sudo sh -c &#39;wget -qO- https:&#47;&#47;dl-ssl.google.com&#47;linux&#47;linux_signing_key.pub | apt-key add -&#39;</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo sh -c &#39;wget -qO- https:&#47;&#47;storage.googleapis.com&#47;download.dartlang.org&#47;linux&#47;debian&#47;dart_stable.list &gt; &#47;etc&#47;apt&#47;sources.list.d&#47;dart_stable.list&#39;</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo apt-get update</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo apt-get install dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">echo &#39;export PATH=&quot;$PATH:&#47;usr&#47;lib&#47;dart&#47;bin&quot;&#39; &gt;&gt; ~&#47;.profile</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash"># Test that it works - display version string</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">dart --version</code><br>
+</pre></div><div class='platform-macos'><pre><span style="user-select: none;">$ </span><code class="language-bash">brew tap dart-lang&#47;dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">brew install dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash"># Test that it works - display version string</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">dart --version</code><br>
+</pre></div><div class='platform-windows'><pre><span style="user-select: none;">$ </span><code class="language-bash">:: (in an administrator command line)</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">choco install dart-sdk</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">:: Test that it works - display version string</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">dart --version</code><br>
+</pre></div></li>
+</ol>
+<ol start="2">
+<li>
+<p>Activate the Conduit CLI (command line interface),
+which helps you easily create, manage, and test
+your Conduit projects.</p>
+<pre><code class="language-bash"> pub global activate conduit
+ conduit --version 
+ # “Conduit CLI version: x.y.z”
+</code></pre>
+</li>
+<li>
+<p>Create and run your new Conduit project using the
+Conduit CLI.</p>
+<p>After running <code>conduit serve</code>, you should see
+a port listed, such as 8888 or 8080. In your web
+browser of choice, navigate to <a href="http://localhost:xxxx">http://localhost:xxxx</a>
+where xxxx is the port number. You should see ‘404
+Not Found’ displayed in bold text.</p>
+<pre><code class="language-bash"> conduit create my_project
+ cd my_project
+ conduit serve
+</code></pre>
+</li>
+<li>
+<p>Open the project folder in your favorite IDE with
+Dart support, such as <a href="https://code.visualstudio.com/">VS Code</a> 
+with the <a href="https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code">Dart Code</a>
+extension or <a href="https://www.jetbrains.com/webstorm/">JetBrains WebStorm</a>. 
+<a href="https://dart.dev/tools#general-purpose-tools">See a full list of IDEs with Dart support &gt;</a></p>
+<pre><code class="language-bash"> code .
+</code></pre>
+</li>
+</ol></div>
+<p>Setup is now complete! If you need help, we recommend asking on our <a href="https://discord.gg/MHz5cqktHW">Discord</a>. Otherwise, now’s a good time to check out the
+<a href="https://gitbook.theconduit.dev/tut/getting-started">heroes tutorial</a> or the <a href="https://gitbook.theconduit.dev">docs</a>.</p>
+
+    </article>
+</main>
+
+
+
+<footer id="main-footer">
+
+    <a id="chevron-link" href="/">
+        <img id="logo-chevron" alt="Conduit logo chevron" src="/images/conduit-palette2.png">
+    </a>
+
+
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear().toString())</script> Conduit authors. All rights reserved.</p>
+
+    <div class="spacer"></div>
+
+    <nav>
+        <ul>
+            <li><a href="https://github.com/conduit-dart/conduit"><img alt="GitHub" src="/images/GitHub-Mark-120px.png"></a></li>
+            <!--li><a href="https://discord.gg/MHz5cqktHW">Forum</a></li-->
+            <li><a href="https://discord.gg/MHz5cqktHW"><img alt="Discord" src="/images/Discord-Logo-Black.svg"></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script defer src="/js/main.js"></script>
+<script defer src="/js/prism.js"></script>
+</body>
+</html>

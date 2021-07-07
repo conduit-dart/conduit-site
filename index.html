@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conduit: A modern Dart server framework</title>
+    
+</head>
+<body>
+
+<header id="main-header">
+    <a href="/">
+        <img id="logo" alt="Conduit logo" src="/images/conduit-name-bg.png">
+    </a>
+
+    <div class="spacer"></div>
+
+    <nav>
+        <ul>
+            <li><a href="https://gitbook.theconduit.dev">Docs</a></li>
+            <!--li><a href="https://discord.gg/MHz5cqktHW">Forum</a></li-->
+            <li><a href="https://discord.gg/MHz5cqktHW">Discord</a></li>
+            <li><a href="https://github.com/conduit-dart/conduit">GitHub</a></li>
+            <li>
+                <a href="/start" class="button primary round mr-1">Get Started</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main id="content" class="content-wide">
+    <div class="rside">
+        <img src="/images/webapps.svg" alt="" aria-hidden="true">
+    </div>
+    <div class="side">
+
+    <h1>The modern, multi-threaded Dart server framework that helps you focus on building.</h1>
+
+    <div class="mini-hr"></div>
+
+    <p class="caption">
+    Conduit is a powerful open-source web framework with everything
+    you need to create production-ready applications.<br><br><br>
+    </p>
+
+<div class="row">
+    <a href="#learn-more" class="button neutral round mr-4">Learn More</a>
+    <a href="/start" class="button primary round ml-4">Get Started</a>
+</div>
+
+<br>
+
+<p>
+    <strong><em>(Migrating from Aqueduct? <a href="https://gitbook.theconduit.dev/migration_guide">Click here</a>)</em></strong>
+</p>
+
+</div>
+
+<br>
+<span id="learn-more"></span>
+<br>
+<h2>One framework, all the tools you need.</h2>
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Fluid <a href="https://gitbook.theconduit.dev/http/routing">routing</a></h3>
+        <p class="caption">
+            A familiar, higher-order functional syntax makes application flow
+            easy to construct and read.
+        </p>
+    </div>
+
+    <pre><code class="language-dart">router
+  .route(&#39;&#47;teams&#47;[:id]&#39;)
+  .link(() =&gt; Authorizer(validator))
+  .link(() =&gt; TeamController(databaseContext));</code></pre>
+
+</div>
+
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Statically-typed <a href="https://gitbook.theconduit.dev/http/routing">ORM</a> with database migrations</h3>
+        <p class="caption">
+            Powerful, statically typed queries enable code-completion and
+            refactoring tools while minimizing error. Tested command-line
+            tooling for database migrations makes data management a
+            breeze.
+        </p>
+    </div>
+
+    <pre><code class="language-dart">final query = Query&lt;Team&gt;(context)
+  ..where((t) =&gt; t.skills).contains(&#39;conduit&#39;)
+  ..join(object: (t) =&gt; t.manager)
+  ..join(set: (t) =&gt; t.developers);
+
+final teams = await query.fetch();</code></pre>
+
+</div>
+<br>
+<hr>
+
+<br><br>
+
+<div class="image-grid">
+    <h2>Works with your favorite technology</h2>
+
+    <p class="caption">
+        Conduit is built on the word class <a href="https://dart.dev">Dart</a>
+        platform, which powers some of the world’s most trusted apps and
+        frameworks, such as Google Ads and Flutter. Dart’s maturity and active
+        developer community means Conduit works with all of the most popular
+        technology and services.<br><br>
+
+        And with prebuilt Docker images and built-in support for PostgreSQL
+        and MySQL databases, Conduit is ready for your tech stack.
+    </p>
+
+    <picture>
+        <source media="(max-width: 999px)" srcset="/images/conduit-tech-grid-wide.png">
+        <source media="(min-width: 1000px)" srcset="/images/conduit-tech-grid.png">
+        <img alt="" aria-hidden="true" src="/images/conduit-tech-grid.png">
+    </picture>
+
+</div>
+
+<br>
+
+
+<div class="image-grid">
+    <h2>Reliable, fast, and tested</h2>
+
+    <p class="caption">
+        Conduit is relied upon to power advanced
+        applications in production for several companies,
+        including <a href="#">TaxiTecnic</a>. Built-in concurrency means
+        it’s blazing fast, and memory-isolated threads
+        eliminate complicated synchronization and
+        race condition worries.
+
+        Conduit is supported by over 1400 automated
+        tests, guaranteeing the stability of each release.
+        And features like sound null safety allow for
+        confidence when writing an application.
+    </p>
+
+    <div style="text-align: right"><h3 style="font-size: 1.4em;"><span class="text-primary">1400</span> automated tests<br>... and counting!</h3></div>
+</div>
+</main>
+
+
+<div class="quickstart">
+    <div class="topline"></div>
+    <div class="content">
+        <h2>Ready? Get up and running in just a few minutes.</h2>
+        <br>
+        <div class="qs-grid">
+            <div class="light-block">
+                <div class="platform-windows">
+                    <pre><span style="user-select: none;">$ </span><code class="language-bash">:! (as administrator)</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">choco install dart-sdk</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">pub global activate conduit</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit create my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">cd my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit serve</code><br>
+</pre>
+                </div>
+                <div class="platform-macos">
+                    <pre><span style="user-select: none;">$ </span><code class="language-bash">brew tap dart-lang&#47;dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">brew install dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">pub global activate conduit</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit create my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">cd my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit serve</code><br>
+</pre>
+                </div>
+                <div class="platform-linux">
+                    <pre><span style="user-select: none;">$ </span><code class="language-bash">sudo sh -c &#39;wget -qO- https:&#47;&#47;dl-ssl.google.com&#47;linux&#47;linux_signing_key.pub | apt-key add -&#39;</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo sh -c &#39;wget -qO- https:&#47;&#47;storage.googleapis.com&#47;download.dartlang.org&#47;linux&#47;debian&#47;dart_stable.list &gt; &#47;etc&#47;apt&#47;sources.list.d&#47;dart_stable.list&#39;</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo apt-get update</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">sudo apt-get install dart</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">echo &#39;export PATH=&quot;$PATH:&#47;usr&#47;lib&#47;dart&#47;bin&quot;&#39; &gt;&gt; ~&#47;.profile</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">pub global activate conduit</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit create my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">cd my_project</code><br>
+<span style="user-select: none;">$ </span><code class="language-bash">conduit serve</code><br>
+</pre>
+                </div>
+                <div class="shadow"></div>
+            </div>
+
+
+            <div>
+                <a href="/start" class="button accent">See the full getting started guide</a>
+                <p>Join our <a href="https://discord.gg/MHz5cqktHW">Discord</a> if you get stuck</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer id="main-footer">
+
+    <a id="chevron-link" href="/">
+        <img id="logo-chevron" alt="Conduit logo chevron" src="/images/conduit-palette2.png">
+    </a>
+
+
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear().toString())</script> Conduit authors. All rights reserved.</p>
+
+    <div class="spacer"></div>
+
+    <nav>
+        <ul>
+            <li><a href="https://github.com/conduit-dart/conduit"><img alt="GitHub" src="/images/GitHub-Mark-120px.png"></a></li>
+            <!--li><a href="https://discord.gg/MHz5cqktHW">Forum</a></li-->
+            <li><a href="https://discord.gg/MHz5cqktHW"><img alt="Discord" src="/images/Discord-Logo-Black.svg"></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script defer src="/js/main.js"></script>
+<script defer src="/js/prism.js"></script>
+</body>
+</html>
