@@ -40,7 +40,7 @@ footer#main-footer {
     > ul {
       list-style-type: none;
       display: flex;
-
+      padding-inline-start: 0;
       place-items: center;
 
       li {
