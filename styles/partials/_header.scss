@@ -9,7 +9,7 @@ header#main-header {
     margin-left: calc(4.8vw - 8px);
     width: 240px;
 
-    @include media("width<700px") {
+    @include media("width<750px") {
       width: 40vw;
     }
   }
@@ -26,14 +26,20 @@ header#main-header {
       display: flex;
       place-items: center;
 
-      @include media("width<700px") {
+      @include media("width<750px") {
         padding-left: 0.2em;
         padding-right: 0.5em;
+        li:not(:last-child) {
+          margin: 0 calc(0.4em + 1.9vw);
+        }
       }
 
-      li:not(:last-child) {
-        margin: 0 calc(0.4em + 1.9vw);
+      @include media("width>=750px") {
+        li {
+          margin: 0 calc(0.4em + 1.9vw);
+        }
       }
+
 
       a:not(.button) {
         text-decoration: none;
@@ -45,7 +51,7 @@ header#main-header {
         }
       }
 
-      @include media("width<700px") {
+      @include media("width<750px") {
         .button {
           display: none;
         }
