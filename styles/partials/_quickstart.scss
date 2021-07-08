@@ -28,7 +28,7 @@
 
     pre {
       position: relative;
-      padding: 30px 25px !important;
+      padding: calc(26px + 0.4vw) calc(25px + 0.7vw) !important;
       margin: 0;
 
       border-bottom-left-radius: 0;
