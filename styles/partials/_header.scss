@@ -37,6 +37,11 @@ header#main-header {
       a:not(.button) {
         text-decoration: none;
         color: var(--color-text-body);
+        transition: color 0.2s;
+
+        &:hover {
+          color: var(--color-primary);
+        }
       }
 
       @include media("width<700px") {
