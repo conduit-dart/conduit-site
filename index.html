@@ -77,17 +77,16 @@
 
 <div class="code-grid my-6">
     <div>
-        <h3>Fluid <a href="https://gitbook.theconduit.dev/http/routing">routing</a></h3>
+        <h3>Seamless <a href="https://gitbook.theconduit.dev/http/routing">routing</a></h3>
         <p class="caption">
-            A familiar, higher-order functional syntax makes application flow
-            easy to construct and read.
+            An easy-to-use functional routing approach makes reading and composing your application fluid and powerful.
         </p>
     </div>
 
     <pre><code class="language-dart">router
-  .route(&#39;&#47;teams&#47;[:id]&#39;)
-  .link(() =&gt; Authorizer(validator))
-  .link(() =&gt; TeamController(databaseContext));</code></pre>
+    .route(&quot;&#47;users&#47;[:id]&quot;)
+    .link(() =&gt; RateLimiter())
+    .link(() =&gt; UserController());</code></pre>
 
 </div>
 
@@ -96,19 +95,54 @@
     <div>
         <h3>Statically-typed <a href="https://gitbook.theconduit.dev/http/routing">ORM</a> with database migrations</h3>
         <p class="caption">
-            Powerful, statically typed queries enable code-completion and
-            refactoring tools while minimizing error. Tested command-line
-            tooling for database migrations makes data management a
-            breeze.
+            A helpful, feature-rich ORM makes it simple to map and query your data with code completion and refactoring.
+            And with a tested CLI and tooling, stop worrying about your migrations.
         </p>
     </div>
 
-    <pre><code class="language-dart">final query = Query&lt;Team&gt;(context)
-  ..where((t) =&gt; t.skills).contains(&#39;conduit&#39;)
-  ..join(object: (t) =&gt; t.manager)
-  ..join(set: (t) =&gt; t.developers);
+    <pre><code class="language-dart">final q = Query&lt;Child&gt;(context)
+    ..where((p) =&gt; p.parent.age).greaterThan(30)
+    ..join(object: (p) =&gt; e.parent);
 
-final teams = await query.fetch();</code></pre>
+final childrenWithParentsOver30 = await q.fetch();</code></pre>
+
+</div>
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Built-in <a href="https://gitbook.theconduit.dev/auth">OAuth 2.0 server</a> and security model</h3>
+        <p class="caption">
+            Powerful and configurable, a built-in OAuth 2.0 system makes security and access a breeze, while giving apps
+            the freedom to store tokens and identifiers wherever they choose.
+        </p>
+    </div>
+
+    <pre><code class="language-dart">final delegate = ManagedAuthDelegate&lt;User&gt;(context);
+authServer = AuthServer(delegate);
+
+router.route(&quot;&#47;profile&quot;)
+    .link(() =&gt; Authorizer.bearer(
+        authServer, scopes: [&quot;profile.readonly&quot;]))
+    .link(() =&gt; ProfileController(context));</code></pre>
+
+</div>
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Integrated <a href="https://gitbook.theconduit.dev/testing">testing library</a></h3>
+        <p class="caption">
+            An expressive test syntax with full integration allows for functional tests that don't rely on mocks.
+            Full access to the framework allows testing database updates and more.
+        </p>
+    </div>
+
+    <pre><code class="language-dart">test(&quot;GET &#47;foo returns 200 and data&quot;, () async {
+    final result = await agent.get(&quot;&#47;foo&quot;);
+    expect(result, hasResponse(200, partial({
+        &quot;status&quot;: &quot;pending&quot;,
+        &quot;version&quot;: greaterThan(1)
+    })));
+});</code></pre>
 
 </div>
 <br>
