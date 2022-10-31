@@ -50,7 +50,7 @@ ___(Migrating from Aqueduct? [Click here]({{data.links.migrate}}))___
    your Conduit projects.
 
     ```bash
-    pub global activate conduit
+    dart pub global activate conduit
     conduit --version 
     # “Conduit CLI version: x.y.z”
     ```
