@@ -1,8 +1,8 @@
 {
-  "docs": "https://gitbook.theconduit.dev",
+  "docs": "https://docs.theconduit.dev",
   "discord": "https://discord.gg/MHz5cqktHW",
   "forum": "https://discord.gg/MHz5cqktHW",
   "github": "https://github.com/conduit-dart/conduit",
-  "migrate": "https://gitbook.theconduit.dev/migration_guide",
-  "heroes": "https://gitbook.theconduit.dev/tut/getting-started"
+  "migrate": "https://docs.theconduit.dev/migration_guide",
+  "heroes": "https://docs.theconduit.dev/tut/getting-started"
 }
