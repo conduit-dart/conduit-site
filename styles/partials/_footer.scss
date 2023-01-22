@@ -5,7 +5,7 @@ footer#main-footer {
   padding: 6px 0;
   place-items: center;
 
-  height: 120px;
+  height: 140px;
 
   a#chevron-link {
     width: calc(104px + 4.3vw);
@@ -40,7 +40,7 @@ footer#main-footer {
     > ul {
       list-style-type: none;
       display: flex;
-
+      padding-inline-start: 0;
       place-items: center;
 
       li {

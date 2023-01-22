@@ -37,16 +37,15 @@ jinja: true
     <div>
         <h3>Fluid <a href="https://docs.theconduit.dev/http/routing">routing</a></h3>
         <p class="caption">
-            A familiar, higher-order functional syntax makes application flow
-            easy to construct and read.
+            An easy-to-use functional routing approach makes reading and composing your application fluid and powerful.
         </p>
     </div>
 
     {% code dart %}
     router
-      .route('/teams/[:id]')
-      .link(() => Authorizer(validator))
-      .link(() => TeamController(databaseContext));
+        .route("/users/[:id]")
+        .link(() => RateLimiter())
+        .link(() => UserController());
     {% endcode %}
 
 </div>
@@ -56,20 +55,59 @@ jinja: true
     <div>
         <h3>Statically-typed <a href="https://docs.theconduit.dev/http/routing">ORM</a> with database migrations</h3>
         <p class="caption">
-            Powerful, statically typed queries enable code-completion and
-            refactoring tools while minimizing error. Tested command-line
-            tooling for database migrations makes data management a
-            breeze.
+            A helpful, feature-rich ORM makes it simple to map and query your data with code completion and refactoring.
+            And with a tested CLI and tooling, stop worrying about your migrations.
         </p>
     </div>
 
     {% code dart %}
-    final query = Query<Team>(context)
-      ..where((t) => t.skills).contains('conduit')
-      ..join(object: (t) => t.manager)
-      ..join(set: (t) => t.developers);
+    final q = Query<Child>(context)
+        ..where((p) => p.parent.age).greaterThan(30)
+        ..join(object: (p) => e.parent);
 
-    final teams = await query.fetch();
+    final childrenWithParentsOver30 = await q.fetch();
+    {% endcode %}
+
+</div>
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Built-in <a href="https://gitbook.theconduit.dev/auth">OAuth 2.0 server</a> and security model</h3>
+        <p class="caption">
+            Powerful and configurable, a built-in OAuth 2.0 system makes security and access a breeze, while giving apps
+            the freedom to store tokens and identifiers wherever they choose.
+        </p>
+    </div>
+
+    {% code dart %}
+    final delegate = ManagedAuthDelegate<User>(context);
+    authServer = AuthServer(delegate);
+
+    router.route("/profile")
+        .link(() => Authorizer.bearer(
+            authServer, scopes: ["profile.readonly"]))
+        .link(() => ProfileController(context));
+    {% endcode %}
+
+</div>
+
+<div class="code-grid my-6">
+    <div>
+        <h3>Integrated <a href="https://gitbook.theconduit.dev/testing">testing library</a></h3>
+        <p class="caption">
+            An expressive test syntax with full integration allows for functional tests that don't rely on mocks.
+            Full access to the framework allows testing database updates and more.
+        </p>
+    </div>
+
+    {% code dart %}
+    test("GET /foo returns 200 and data", () async {
+        final result = await agent.get("/foo");
+        expect(result, hasResponse(200, partial({
+            "status": "pending",
+            "version": greaterThan(1)
+        })));
+    });
     {% endcode %}
 
 </div>
@@ -82,20 +120,20 @@ jinja: true
     <h2>Works with your favorite technology</h2>
 
     <p class="caption">
-        Conduit is built on the word class <a href="https://dart.dev">Dart</a>
+        Conduit is built on the world class <a href="https://dart.dev">Dart</a>
         platform, which powers some of the world’s most trusted apps and
         frameworks, such as Google Ads and Flutter. Dart’s maturity and active
         developer community means Conduit works with all of the most popular
         technology and services.<br><br>
 
         And with prebuilt Docker images and built-in support for PostgreSQL
-        and MySQL databases, Conduit is ready for your tech stack.
+        databases, Conduit is ready for your tech stack.
     </p>
 
     <picture>
-        <source media="(max-width: 999px)" srcset="/images/conduit-tech-grid-wide.png">
-        <source media="(min-width: 1000px)" srcset="/images/conduit-tech-grid.png">
-        <img alt="" aria-hidden="true" src="/images/conduit-tech-grid.png">
+        <source media="(max-width: 999px)" srcset="/images/conduit-tech-grid-wide-nomysql.png">
+        <source media="(min-width: 1000px)" srcset="/images/conduit-tech-grid-nomysql.png">
+        <img alt="" aria-hidden="true" src="/images/conduit-tech-grid-nomysql.png">
     </picture>
 
 </div>
